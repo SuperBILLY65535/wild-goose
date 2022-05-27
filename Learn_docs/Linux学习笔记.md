@@ -36,3 +36,22 @@ d代表文件, rwx r-x r-x 分别代表三种身份的权限: 文件属主可以
 #### chmod
 
 用途: 改变文件访问控制权.
+
+## Linux LVM 逻辑卷管理系统
+
+灵活可变，易修改且不会造成数据丢失的逻辑卷管理
+
+### PE: Physical Extend
+
+空间分配的最小单位，来自物理磁盘。
+
+### PV: Physical Volume
+
+字面意义上的物理磁盘，提供可分配的空间。
+
+`pvcreate /dev/sd*`创建物理卷
+
+### VG: Volume Group
+
+卷组，硬盘封装层所在的位置。
+
